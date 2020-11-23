@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+     <% for(let i = 0; i < database.length; i++){ %>
+     <p><%= database[i].nombre %></p>
+     <p><%= database[i].precio %></p>
+     <p><%= database[i].marca %></p>
+     <p><%= database[i].stock %></p>
+     <p><%= database[i].descripcion %></p>
+     <a href="/products/edit/<%= database[i].id %>">EDITAR</a>
+     <a href="/products/delete/<%= database[i].id %>">BORRAR</a>
+    </br>
+    </br>
+     <% } %>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<form action="/products/edit/<%= editable.id %>" method="POST">
+    Nombre:
+    <input type="text" name="nombre" id="nombre" value="<%= editable.nombre %>">
+    </br>
+    Precio:
+    <input type="number" name="precio" id="precio" value="<%= editable.precio %>">
+    </br>
+    Marca:
+    <input type="text" name="marca" id="marca" value="<%= editable.marca %>">
+    </br>
+    Descripcion:
+    <textarea name="descripcion" id="descripcion" cols="30" rows="5"><%= editable.descripcion %></textarea>
+    </br>
+    Stock:
+    <input type="number" name="stock" id="stock" value="<%= editable.stock %>">
+    </br>
+    <button type="submit">EDITAR</button>
+    </form>
